@@ -23,6 +23,7 @@ body {
   font-size: 18px;
 }
 
+/* Header Styling */
 .header {
   position: fixed;
   top: 0;
@@ -45,7 +46,11 @@ body {
   height: 100%;
 }
 
-.main-top {
+
+/* Main Content Styling */
+.main-top, 
+.main-menu,
+.main-access {
   margin-top: calc(var(--header-height) + 2rem);
   display: flex;
   flex-direction: column;
@@ -57,13 +62,47 @@ body {
   width: 100%;
 }
 
-.main-top-text {
+.main-top-text,
+.main-menu-heading {
   text-align: center;
   line-height: 1.6;
   font-size: 1.25rem;
-  margin: 4rem 0;
+  margin: 4rem 0 2rem;
 }
 
+.main-menu-container {
+  margin-bottom: 4rem;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.25rem;
+}
+
+.menu-card {
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.menu-card-image {
+  width: 100%;
+}
+
+.menu-card-info {
+  text-align: center;
+}
+
+.menu-card-text {
+  font-size: 0.9rem;
+}
+
+
+/* Built in Elements Styling */
 a {
   color: var(--font-colour);
   text-decoration: none;

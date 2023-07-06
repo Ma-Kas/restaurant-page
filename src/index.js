@@ -1,4 +1,5 @@
 import { createHeader, createMainTop } from "./page-load";
+import { createMenu } from "./menu";
 
 const removeMain = () => {
   const content = document.getElementById('content');
@@ -7,4 +8,5 @@ const removeMain = () => {
 }
 
 createHeader();
-createMainTop();
+// createMainTop();
+createMenu();
