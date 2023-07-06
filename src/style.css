@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "TsukuArd Gothic";
+  src: url("./fonts/TsukuArd\ Gothic.ttc");
+}
+
+:root {
+  --bg-colour: black;
+  --font-colour: white;
+  --header-height: 50px;
+}
+
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-colour);
+  color: var(--font-colour);
+  font-family: 'TsukuArd Gothic', Arial, sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-colour);
+  height: var(--header-height);
+  padding: 1.25rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.header-image {
+  height: 100%;
+}
+
+.main-top {
+  margin-top: calc(var(--header-height) + 2rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-top-image {
+  width: 100%;
+}
+
+.main-top-text {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1.25rem;
+  margin: 4rem 0;
+}
+
+a {
+  color: var(--font-colour);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
