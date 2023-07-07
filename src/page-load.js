@@ -1,4 +1,4 @@
-export const createHeader = () => {
+export const createHeaderDOM = () => {
   const navigationContent = ['Top', 'Menu', 'Access'];
 
   const content = document.getElementById('content');
@@ -20,16 +20,15 @@ export const createHeader = () => {
   // Need to create 3 different items for navigation bar, so create in loop
   // Assign content and id from array
   for (let i = 0; i < 3; i++) {
-    const aNavigationItem = document.createElement('a');
-    aNavigationItem.classList.add('navigation-item');
-    aNavigationItem.href = '';
-    aNavigationItem.id = navigationContent[i].toLowerCase();
-    aNavigationItem.textContent = navigationContent[i];
-    divNavigationBar.appendChild(aNavigationItem);
+    const divNavigationItem = document.createElement('div');
+    divNavigationItem.classList.add('navigation-item');
+    divNavigationItem.id = navigationContent[i].toLowerCase();
+    divNavigationItem.textContent = navigationContent[i];
+    divNavigationBar.appendChild(divNavigationItem);
   }
 }
 
-export const createMainTop = () => {
+export const createMainTopDOM = () => {
   const restaurantIntroContent = [
     'メキシコ人シェフが作る本格メキシカン料理。',
     '日本で意外と知られていない本格的なメキシコ料理をみなさまに知っていただきたいという思いを込めて作っています。',
@@ -61,4 +60,17 @@ export const createMainTop = () => {
     pRestaurantIntro.textContent = restaurantIntroContent[i];
     divMainTopText.appendChild(pRestaurantIntro);
   }
+}
+
+export const createFooterDOM = () => {
+  const content = document.getElementById('content');
+
+  const divFooter = document.createElement('div');
+  divFooter.classList.add('footer');
+  content.appendChild(divFooter);
+
+  const divFooterText = document.createElement('div');
+  divFooterText.classList.add('footer-text');
+  divFooterText.textContent = 'Avocados Osaka ©︎ 2023';
+  divFooter.appendChild(divFooterText);
 }

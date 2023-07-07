@@ -1,5 +1,4 @@
-export const createMenu = () => {
-  console.log('called');
+export const createMenuDOM = () => {
   const menuHeadingContent = ['まずは試してもらいたい', '- メキシコ料理 -'];
   const menuCardContent = [
     {
