@@ -7,6 +7,8 @@
   --header-footer-bg: black;
   --bg-colour: black;
   --font-colour: #f3f3f3;
+  --root-font-size: 18px;
+  --root-line-height: 1.6;
   --main-heading-text: 1.5rem;
   --sub-heading-text: 1.25rem;
   --running-text-size: 0.75rem;
@@ -17,17 +19,13 @@
 
 * {
   margin: 0;
-  /* border: 1px solid red; */
+  border: 0;
   padding: 0;
 }
 
 html {
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-body {
-  margin: 0;
+  font-size: var(--root-font-size);
+  line-height: var(--root-line-height);
   background-color: var(--bg-colour);
   color: var(--font-colour);
   font-family: 'TsukuArd Gothic', Arial, sans-serif;
