@@ -1,3 +1,6 @@
+import headerImage from './img/header.png';
+import topImage from './img/main.png';
+
 export const createHeaderDOM = () => {
   const navigationContent = ['Top', 'Menu', 'Access'];
 
@@ -9,7 +12,7 @@ export const createHeaderDOM = () => {
 
   divHeader.classList.add('header');
   imgHeader.classList.add('header-image');
-  imgHeader.src = '../src/img/header.png';
+  imgHeader.src = headerImage;
   imgHeader.alt = 'Avocados Mexican Cafe';
   divNavigationBar.classList.add('navigation-bar');
   
@@ -43,7 +46,7 @@ export const createMainTopDOM = () => {
   
   divMainTop.classList.add('main-top');
   imgMainTop.classList.add('main-top-image');
-  imgMainTop.src = '../src/img/main.png';
+  imgMainTop.src = topImage;
   imgMainTop.alt = 'A delicious plate of Maxican food.';
   divMainTopText.classList.add('main-top-text');
   

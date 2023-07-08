@@ -1,6 +1,7 @@
 import { createHeaderDOM, createMainTopDOM, createFooterDOM } from "./page-load";
 import { createMenuDOM } from "./menu";
 import { createAccessDOM } from "./access";
+import './style.css';
 
 
 const domController = (() => {

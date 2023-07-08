@@ -1,9 +1,13 @@
+import quesedillaImage from './img/quesedilla.png';
+import tacoImage from './img/tacos.png';
+import burritoImage from './img/burrito.png';
+
 export const createMenuDOM = () => {
   const menuHeadingContent = ['まずは試してもらいたい', '- メキシコ料理 -'];
   const menuCardContent = [
     {
       id: 'quesedilla-card', 
-      src: '../src/img/quesedilla.png', 
+      src: quesedillaImage, 
       alt: 'A delicious quesedilla.',
       name: 'ケサディーヤ',
       price: '¥1,100',
@@ -11,7 +15,7 @@ export const createMenuDOM = () => {
     },
     {
       id: 'tacos-card', 
-      src: '../src/img/tacos.png', 
+      src: tacoImage, 
       alt: 'A delicious taco.',
       name: 'タコス',
       price: '１つ￥６００〜',
@@ -19,7 +23,7 @@ export const createMenuDOM = () => {
     },
     {
       id: 'burrito-card', 
-      src: '../src/img/burrito.png', 
+      src: burritoImage, 
       alt: 'A delicious burrito.',
       name: 'ブリトー',
       price: '¥1,150',

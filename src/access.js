@@ -1,3 +1,5 @@
+import accessImage from './img/access.jpg';
+
 export const createAccessDOM = () => {
   const mainAccessContent = [
     {left: 'Address', right:'大阪市中央区上町１丁目１−２２'},
@@ -26,7 +28,7 @@ export const createAccessDOM = () => {
   divMainAccess.appendChild(divMainAccessContainer);
 
   imgMainAccessImage.classList.add('main-access-image');
-  imgMainAccessImage.src = '../src/img/access.jpg';
+  imgMainAccessImage.src = accessImage;
   imgMainAccessImage.alt = 'Avocados Mexican Cafe Front.';
   divMainAccessContainer.appendChild(imgMainAccessImage);
 
